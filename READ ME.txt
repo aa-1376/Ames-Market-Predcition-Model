@@ -1,0 +1,43 @@
+
+Project Description:
+
+The year is 2011. Our team is hired by a real estae agency in Pittsburgh who are looking to set up operations in Ames, Iowa. We have been hired to help the real estate agency understadnt the housing market in Ames better. They wish to know what is that the residents of Ames looking for in houses. Based on this information they will know what attributes of the houses to pay special attention to.
+
+In the housing market, each property has a series of physical characteristics that determine its value. These physical characteristics (number of rooms, type of material, utilities, etc.) can positively or negatively affect its price. The supply side offers houses with very different attributes, while the demand side assigns different relative values to each housing attribute.
+
+The price of homes is a complex interaction of attributes. Consequently, the real estate market faces the challenge of understanding how real estate prices depend on the valuation of house's attributes. Decision-makers in the private sector (real estate) or public sector need to know the degree of influence of an attribute on the market price of a house. Thus, decision-makers can predict how the price will change as the characteristics of each attribute change.
+
+In this project, we will conduct a regression model using a public dataset of houses’ physical characteristics to evaluate how these variables are associated with the market price of a private residential house.
+
+
+
+Project Questions:
+
+Q1) What is the unique set of houses' physical attributes that are most associated to the final Sale Price of real estate? To which degree does each variable influence the final price? This will be very useful information for real estate agents. This allows them to identify which charecteristics to focus on when evaluating if they should buy the house for investment purposes.This is a feature selection problem.
+
+Q2) How can we create a model that is best able to predict the Sale price of the house if house charecteristics are provided. This will be very helpful for real estate agents to make business decisions about houses in their protfolios. This will tell them what would be the expected sale price of the house. This is a regression problem.
+
+Q3) The houses in the dataset have an overall ranking based on their features. We are trying to indeitify what are the physical properties of a house that best evaluate and classify its overall condition? This will allow real estat agents to classify a house into a unique measurable category and be able to compare all houses over a common classification. If they recieve all charecteristics of a house they can use this method to classifiy the house on a scale of 1 - 10. This will be a classification problem.
+
+Q4) In Ames, there are three main zip code areas. Are there any striking differences in the houses' attributes that allow classifying which zip code a property belongs to?. This will help real estate agents to decide if they should focus on sale of houses in a perticluar zip code. This is a classification problem
+
+
+Datasets:
+
+We got to work right away and looked for necessary datasets to base our analysis on.
+
+Since the scope of our project is limited to Ames, Iowa, we will use credible data sources for housing prices in this city. In our case, these databases will be provided by Kaggle.com and UnitedStatesZipCodes.com.
+
+1) House Prices - Advanced Regression Techniques:
+
+● Description: Information on variables that describe the characteristics and prices of houses located in Ames, Iowa. It contains information from 2006 to 2010.
+
+● Source: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/code This dataset contains 1460 observations and 82 variables. All variables describe the physical characteristics of private residential houses. We define physical characteristics as the design, construction and location properties of the houses. Variables can be continuous if they indicate sizes and measurements, and categorical if they indicate the type or quality of material and building.
+
+2) Statistics for zip code areas in Ames, Iowa:
+
+● Description: Average household income and estimated population in each of Ames’ zip code areas.
+
+● Source: https://www.unitedstateszipcodes.org/50010/
+
+Note that Ames is a small city. It has a surface of 27.68 sq mi (71.71 km2) and a population of 66,000 inhabitants. The city comprises five different zip codes. However, the largest zip code areas are the ones from 50010, 50014, and 50105. We constructed this dataset by collecting information on the number of inhabitants and average household income in the three largest zip code areas of Ames. The dataset contains observations for the years 2006 to 2010. We also consulted the results of the US Census American Community Survey. However, the site does not have information available for the years 2006 - 2010 at the zip code level in Ames, Iowa. The US Census Bureau provides information only at the zip code level from the 2019 American Community Survey 5-Year Estimates. See link.
